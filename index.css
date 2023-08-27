@@ -1,13 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:ital@1&display=swap');
+
+:root{
+    --main-dark-bg-color:#0B001A;
+    --main-text-color:white;
+    --project-section-bg:#1E0044;
+    --project-section-card-bg:linear-gradient(95deg, #8338EC 0%, #9C2EF5 100%);
+    --main-font:Montserrat;
+
+}
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #0B001A;
+    color: white;
 }
 
 body{
     font-family: 'Chakra Petch', sans-serif;
+    
 
 }
 .intro{
@@ -327,3 +340,83 @@ section h1{
 .myButtonn:hover {
     background-color: #ffffff;
 }
+
+
+/*
+About us section styling starts
+*/
+
+.aboutUs-container{
+    padding: 40px;
+    border-radius: 40px;
+    height: 50dvh;
+    width: 90dvw;
+    background-image: url('./Images/about-us-background-image.png');
+    background-size: cover;
+    background-repeat: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+
+
+.left-part{
+    display: grid;
+    grid-template-rows: 1fr 1fr 0.3fr;
+   
+
+}
+
+
+}
+.upper{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+
+
+}
+.mobtech-heading{
+    font-size: 0.5rem;
+
+}
+.aboutUs-heading{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.lowerTags{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.tags{
+    display: flex;
+    padding: 5.898px 11.797px;
+    align-items: center;
+    border-radius: 19.169px;
+    border: 1px solid #0B001A;
+}
+.middle{
+
+}
+.lower{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+}
+.social-link{
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    fill: #E9DEFF;
+    stroke-width: 1px;
+    stroke: #0B001A;
+    filter: drop-shadow(0px 0px 3.1481480598449707px rgba(162, 45, 247, 0.10)) drop-shadow(0px 0px 6.518518447875977px rgba(162, 45, 247, 0.10)) drop-shadow(0px 0px 13px rgba(162, 45, 247, 0.10)) drop-shadow(0px 0px 25.481481552124023px rgba(162, 45, 247, 0.10)) drop-shadow(0px 0px 46.85185241699219px rgba(162, 45, 247, 0.10)) drop-shadow(0px 0px 19px rgba(162, 45, 247, 0.10));
+}
+#right-side-image{
+    height: 70%;
+    width: 30%;
+
+}
+
+
+/*
+About us section styling ends
+*/
