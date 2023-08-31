@@ -47,7 +47,7 @@ hr{
     color: white;
 }
 
-.navbar {
+#navbar {
     background-color: var(--main-dark-bg-color);
     color: white;
     position: fixed;
@@ -55,9 +55,10 @@ hr{
     width: 100%;
     z-index: 1000;
     font-size: 0.6rem;
+    display: none;
 }
 
-.navbar ul {
+#navbar ul {
     list-style: none;
     display: flex;
     justify-content: right;
@@ -65,12 +66,12 @@ hr{
     padding-right: 10%;
 }
 
-.navbar li {
+#navbar li {
     padding-top: 0.5%;
     margin-left: 7%;
 }
 
-.navbar a {
+#navbar a {
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -348,6 +349,11 @@ section h1{
 }
 
 
+
+
+
+
+
 /*
 About us section styling starts
 */
@@ -505,9 +511,123 @@ About us section styling ends
 /*
 Project showcase styling section starts
 */
+#projectShowcase{
+    
+    
 
 
-  
+}
+.project_container{
+    border-radius: 40px;
+    background: #1E0044;
+    width: 96dvw;
+    margin-left: 1.4dvw;
+    padding: 40px;
+    border-radius: 40px;
+    
+    
+    
+   
+    display: grid;
+    grid-template-rows:1fr 4fr 0.5fr;
+    margin: 0 auto;
+    
+    width: 95dvw;
+}
+.heading-work{
+    width:100%;
+    text-align:center;
+    border-bottom: white;
+    border-top: 1px solid white;
+    line-height:0.1em;
+    margin:10px 0 20px;
+    font-size: 2.5rem;
+}
+.heading-work span{
+    background:var(--project-section-bg);
+    padding:0 10px;
+    
+}
+.project-card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25dvw, 1fr));
+    column-gap: 5dvw;
+    margin-top: 10dvh;
+    
+}
+.card{
+    display:grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    height: 50dvh;
+    border-radius: 20px;
+    background: linear-gradient(95deg, #8338EC 0%, #9C2EF5 100%);
+    text-align: center;
+    margin-bottom: 4dvh;
+}
+.card:hover{
+    background: (92deg, #7840c8 0%, #9C2EF5 100%);
+
+}
+
+
+    
+.check-out-button{
+    border-radius: 19.169px;
+    border: 1px solid #FFF;
+    align-items: center;
+    
+    justify-self: center;
+    color: #ffffff;
+    padding: 1dvh 1.5dvh 1dvh 1.5dvh;
+    background-color: var(--project-section-card-bg);
+
+}
+.check-out-button:hover{
+    cursor: pointer;
+    opacity: 0.6;
+    box-shadow: 8px -7px 49px -3px rgba(199,108,214,0.64);
+    -webkit-box-shadow: 8px -7px 49px -3px rgba(199,108,214,0.64);
+    -moz-box-shadow: 8px -7px 49px -3px rgba(199,108,214,0.64);
+}
+.show-more{
+    justify-self: center;
+    margin-top: 5dvh;
+    
+}
+.show-more-button{
+    color: rgb(245, 245, 245);
+    padding: 10px;
+    border-radius: 19.169px;
+    border: 1px solid #000;
+    background: #1E0044;
+    box-shadow: 0px 0px 3.1481480598449707px 0px rgba(162, 45, 247, 0.10), 0px 0px 6.518518447875977px 0px rgba(162, 45, 247, 0.10), 0px 0px 13px 0px rgba(162, 45, 247, 0.10), 0px 0px 25.481481552124023px 0px rgba(162, 45, 247, 0.10), 0px 0px 46.85185241699219px 0px rgba(162, 45, 247, 0.10), 0px 0px 19px 9px rgba(162, 45, 247, 0.10);
+
+
+}
+.card-heading{
+    font-size: 1.7rem;
+    justify-self: start;
+    margin-top: 2.5dvh;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.32px;
+    margin-left: 2.2dvw;
+   
+}
+.card-content{
+    font-size: 0.8rem;
+    justify-self: start;
+    margin-top: 9dvh;
+    margin-left: 2dvw;
+
+}
+
+.show-more-button:hover{
+    background: #3f0887;
+    cursor: pointer;
+
+}
 
   
 
@@ -517,9 +637,61 @@ Project showcase styling section ends
 */
 
 
+/*
+Meet the team section styling starts
+*/
+#meetTheTeam{
+    margin-top: 20dvh;
+}
+
+.meetTheTeam-container{
+    padding: 40px;
+    border-radius: 40px;
+    
+    background-image: url('./Images/about-us-background-image.png');
+    background-size: cover;
+    background-repeat: none;
+    display: grid;
+    grid-template-rows: ;
+    margin: 0 auto;
+    gap: 6dvw;
+    width: 95dvw;
+    text-align: center;
+
+}
+.heading-meetTeam{
+    font-size: 3.0rem;
+    color: #000;
+    font-weight: 600;
 
 
+}
+.team-middle{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40dvw, 1fr));;
+    column-gap: 7dvw;
+    padding: 0 7dvw 0 7dvw;
+}
+.ShowMoreTeam{
+    border-radius: 19.169px;
+    border: 1px solid #000;
+    background: #1E0044;
+    box-shadow: 0px 0px 3.14815px 0px rgba(162, 45, 247, 0.10), 0px 0px 6.51852px 0px rgba(162, 45, 247, 0.10), 0px 0px 13px 0px rgba(162, 45, 247, 0.10), 0px 0px 25.48148px 0px rgba(162, 45, 247, 0.10), 0px 0px 46.85185px 0px rgba(162, 45, 247, 0.10), 0px 0px 19px 9px rgba(162, 45, 247, 0.10);
+    padding: 1dvh 2dvh 1dvh 2dvh;
+    align-items: center;
+    font-size: 1.1rem;
 
+
+}
+.ShowMoreTeam:hover{
+    background: #4a0f96;
+    cursor: pointer;
+}
+
+
+/*
+Meet the team section styling ends
+*/
 
 /*
 contact us section starts
@@ -534,10 +706,11 @@ contact us section starts
     background: #1E0044;
     width: 95dvw;
     justify-self: center;
+    padding: 2dvh 2dvh 2dvh 5dvh;
 }
 .contactUs-container{
     display: grid;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr 3.2fr;
 }
 .heading-of-form{
     text-align: center;
@@ -553,6 +726,7 @@ contact us section starts
     display: grid;
     grid-template-columns: 4fr 6fr;
     column-gap: 8dvw;
+    margin-bottom: 1dvh;
 }
 
 .left-side-form{
@@ -586,11 +760,14 @@ label{
     margin-bottom: 1.3dvh;
 }
 input{
-    width: 80%;
+    width: min(80%,40dvw);
     height: 2.3rem;
     margin-bottom: 5%;
     color: black;
     resize: none;
+}
+textarea{
+    width: min(80%,40dvw);
 }
 .messageInput{
     height: 25dvh;
@@ -634,23 +811,124 @@ a:hover{
 
 
 }
-
+#sendButton{
+    margin-top: 2dvh;
+    margin-bottom: 3dvh;
+}
+.input-form{
+    color: #000;
+    font-size: 1rem;
+}
 #social-logo{
     height: 3dvh;
     width: 3dvh;
 }
 #sendButton:hover{
-    background: #2e0861;
+    background: var(--project-section-bg);
     cursor: pointer;
+    border: 1px solid white;
 
 }
 /*
 contact us section ends
 */
 
+/* Ensure all parent elements have proper sizing */
+#animation-mobile, .intro-video {
+    height: 100%;
+}
 
+/* Set video dimensions and styling */
+#club-intro-vid {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    object-fit: cover; /* Ensure the video covers the entire container */
+    
+}
+
+/* Adjust margin for better spacing */
+#animation-mobile {
+    margin-bottom: 0; /* You can adjust this value as needed */
+}
 
 /*
 media queri
+*/
+
+/* Mobile devices up to 480px width */
+@media (max-width: 480px) and (min-width: 321px) {
+    .heading-of-form-text {
+        font-size: 3rem;
+    }
+    #contactUs {
+        height: 100vh;
+        grid-template-columns: repeat(auto-fill, minmax(39vw, 1fr));
+        margin-top: 140dvh;
+    }
+    .left-side-form {
+        margin-left: 0; /* Reset margin for larger screens */
+    }
+    .form-section{
+        display: grid;
+        grid-template-columns: 8fr;
+
+        
+    }
+    .left-side-form{
+        display: none;
+    }
+    .right-side-form{
+        width: 80dvw;
+        margin-left: 20dvw;
+    }
+    .tag{
+        font-size: 0.8rem;
+    }
+    .input-form{
+        width: 50dvh;
+    }
+    #sendButton{
+        margin-top: 2dvh;
+    }
+
+    /*
+    project showcase styling
+    */
+
+    #projectShowcase{
+        margin-top: 60dvh;
+        margin-bottom: 50dvh
+    }
+    .heading-work{
+        font-size: 2rem
+    }
+    .project-card-container{
+        grid-template-columns: repeat(auto-fill, minmax(60dvw, 1fr));
+        
+    }
+    .card{
+        height: 40dvw;
+    }
+}
+
+/* Smartphones, portrait iPhone, portrait 320x480 phones (Android) */
+@media (max-width: 320px) {
+    .heading-of-form-text {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+    #contactUs {
+        height: 150vh;
+        grid-template-columns: repeat(auto-fill, minmax(39vw, 1fr));
+    }
+    .left-side-form {
+        margin-left: 5vw;
+    }
+}
+
+
+/*
+animation video intro
+
 */
 
