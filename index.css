@@ -18,6 +18,11 @@
     
     color: white;
 }
+#logo-navbar{
+    width: 10dvh;
+    height: 10dvh;
+    margin-left: 4dvw;
+}
 
 body{
     font-family: 'Chakra Petch', sans-serif;
@@ -29,7 +34,7 @@ hr{
     display: inline;
 }
 .intro{
-    height: 100vh;
+    height: 100dvh;
 
 }
 .intro video{
@@ -56,6 +61,7 @@ hr{
     z-index: 1000;
     font-size: 0.6rem;
     display: none;
+    grid-template-columns:1fr 5fr;
 }
 
 #navbar ul {
@@ -360,7 +366,7 @@ About us section styling starts
 
 
 .about-us{
-    margin-top: 20dvh;
+    margin-top: 10dvh;
     color: black;
     margin-bottom: 7dvh;
 }
@@ -557,7 +563,7 @@ Project showcase styling section starts
 }
 .card{
     display:grid;
-    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 3.5fr 1fr;
     height: 50dvh;
     border-radius: 20px;
     background: linear-gradient(95deg, #8338EC 0%, #9C2EF5 100%);
@@ -568,6 +574,7 @@ Project showcase styling section starts
     background: (92deg, #7840c8 0%, #9C2EF5 100%);
 
 }
+
 
 
     
@@ -620,6 +627,7 @@ Project showcase styling section starts
     justify-self: start;
     margin-top: 9dvh;
     margin-left: 2dvw;
+    overflow-wrap: break-word;
 
 }
 
@@ -660,7 +668,7 @@ Meet the team section styling starts
 
 }
 .heading-meetTeam{
-    font-size: 3.0rem;
+    font-size: 2.8rem;
     color: #000;
     font-weight: 600;
 
@@ -668,9 +676,10 @@ Meet the team section styling starts
 }
 .team-middle{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(40dvw, 1fr));;
-    column-gap: 7dvw;
-    padding: 0 7dvw 0 7dvw;
+    grid-template-columns: repeat(auto-fill, minmax(33dvw, 1fr));
+    
+    column-gap: 4dvw;
+    padding: 0 2dvw 0 2dvw;
 }
 .ShowMoreTeam{
     border-radius: 19.169px;
@@ -688,7 +697,41 @@ Meet the team section styling starts
     cursor: pointer;
 }
 
+.card-team{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 20px;
+    background: linear-gradient(93deg, #8338EC 10.4%, #9C2EF5 101.06%);
+    height: 48dvh;
 
+}
+
+.circle-photo{
+    border-radius: 50%;
+    width: 24dvh;
+    height: 24dvh;
+    align-content: center;
+    margin-left: 2dvw;
+}
+.right-side{
+    align-self: center;
+    
+}
+.left-side{
+    display: grid;
+    grid-template-rows: 1fr 0.7fr 5fr;
+
+}
+
+.desig{
+    font-size: 1rem;
+    margin-bottom: 1dvh;
+}
+.team-member-name{
+    font-size: 1.2rem;
+    margin-top: 0.7dvh;
+    justify-self: center;
+}
 /*
 Meet the team section styling ends
 */
@@ -698,7 +741,7 @@ contact us section starts
 */
 
 #contactUs{
-    margin-top: 90dvh;
+    margin-top: 50dvh;
     margin-left: 1.6dvw;
     
     
@@ -706,7 +749,7 @@ contact us section starts
     background: #1E0044;
     width: 95dvw;
     justify-self: center;
-    padding: 2dvh 2dvh 2dvh 5dvh;
+    padding: 2dvh 2dvh 2dvh 19dvh;
 }
 .contactUs-container{
     display: grid;
